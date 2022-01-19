@@ -40,15 +40,11 @@ mkdir catkin_ws
 cd catkin_ws
 ```
 
-Install the latest version of the simulation:
+For the latest version:
 
 ```bash
-vcs import --input https://raw.githubusercontent.com/RobotnikAutomation/summit_xl_sim/melodic-devel/repos/summit_xl_sim_devel.repos
-```
-
-**Install the ROS dependencies**
-
-```bash
+vcs import --input \
+  https://raw.githubusercontent.com/RobotnikAutomation/summit_xl_sim/melodic-devel/repos/summit_xl_sim_devel.repos
 rosdep install --from-paths src --ignore-src --skip-keys="summit_xl_robot_control marker_mapping robotnik_locator robotnik_pose_filter" -y
 ```
 <!--

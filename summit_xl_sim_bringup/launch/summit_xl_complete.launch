@@ -5,7 +5,7 @@
 	<!-- GPS default position of Robotnik at Fuente del Jarro-->
 
 	<arg name="launch_rviz" default="true"/>
-	<arg name="gazebo_world" default="$(find summit_xl_gazebo)/worlds/summit_xl_office.world"/>
+	<arg name="gazebo_world" default="$(find summit_xl_gazebo)/worlds/clearpath_playpen.world"/>
 	<arg name="gazebo_gui" default="true"/>
 	<arg name="omni_drive" default="false"/>
 	<arg name="default_xacro" default="summit_xl_std.urdf.xacro"/>
@@ -20,10 +20,11 @@
 	<arg name="id_robot_a" default="robot"/>
 	<arg name="launch_robot_a" default="true"/>
 	<arg name="xacro_robot_a" default="$(arg default_xacro)"/>
-	<arg name="map_file_a" default="willow_garage/willow_garage.yaml"/>
+	<arg name="map_file_a" default="empty/white_map.yaml"/>
 	<arg name="gmapping_robot_a" default="false"/>
 	<arg name="move_base_robot_a" default="true"/>
 	<arg name="ekf_localization_robot_a" default="false"/>
+	<arg name="ekf_localization_mode_a" default="odom"/>
 	<arg name="amcl_and_mapserver_a" default="true"/>
 	<arg name="launch_pad_a" default="false"/>
 	<arg name="gps_latitude_robot_a" default="39.5080331"/>
